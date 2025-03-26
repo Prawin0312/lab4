@@ -25,6 +25,6 @@ jobs:
         - name: Publish package to Npm registry
           run: npm publish
           env: 
-            NODE_AUTH_TOKEN: GITHUB_TOKEN
+            NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
 
